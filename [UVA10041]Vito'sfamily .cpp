@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-	int kase, num, num_backup, tmp, median, result;
+	int kase, num, num_backup, tmp, mediun, result;
 	vector<int> arr;
 	cin >> kase;
 	while(kase--) {
@@ -20,11 +20,11 @@ int main(){
 		
 		num = num_backup;
 		sort(arr.begin(), arr.end());
-		median = arr[num / 2];
+		mediun = arr[num / 2];
 		
 		result = 0;
 		while(num--){
-			result += abs(arr[num] - median);
+			result += abs(arr[num] - mediun);
 		}
 		cout << result << endl;
 	}
